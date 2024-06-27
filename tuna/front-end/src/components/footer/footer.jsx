@@ -8,7 +8,7 @@ const footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
             <img src={assets.tuna}alt="" style={{ width: '220px', height: '40px' }} className='logo' />
-                <p>Tunalk brings you the finest selection of fresh seafood, sourced daily and delivered with care. Our commitment to quality ensures that every product, from succulent shrimp to delicate fish fillets, meets the highest standards of freshness and taste. Whether you're preparing a gourmet meal or hosting a casual gathering, trust Tunalk to provide the seafood excellence you deserve. Explore our diverse range and experience the difference in every bite.</p>
+                <p>Tunalk offers the finest fresh seafood, sourced daily and delivered with care. Our commitment to quality ensures every product, from shrimp to fish fillets, meets the highest standards of freshness and taste. For gourmet meals or casual gatherings, trust Tunalk for seafood excellence. Explore our range and taste the difference.</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon}alt="" />
