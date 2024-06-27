@@ -7,9 +7,9 @@ import search_icon from './search_icon.png'
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
-import menu_4 from './menu_4.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
+import menu_4 from './crab.png'
+import menu_5 from './shrimp.png'
+import menu_6 from './lobster.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 
@@ -61,8 +61,10 @@ import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
+import tunamain from './tunamain.png'
 
 export const assets = {
+    tunamain,
     tuna,
     logo,
     basket_icon,
@@ -87,267 +89,191 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Fish",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Shellfish",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Mollusk",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Crab",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Shrimps",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Lobster",
         menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
-    }]
+    }
+]
 
 export const food_list = [
     {
         _id: "1",
-        name: "Greek salad",
+        name: "Raw Salmon Fillet",
         image: food_1,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        price: 2000,
+        description: "Fresh raw salmon fillet, rich in omega-3 fatty acids.",
+        category: "Fish"
     },
     {
         _id: "2",
-        name: "Veg salad",
+        name: "Raw Tuna Steak",
         image: food_2,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
-    }, {
+        price: 2000,
+        description: "Premium grade raw tuna steak, perfect for sushi and sashimi.",
+        category: "Fish"
+    },
+    {
         _id: "3",
-        name: "Clover Salad",
+        name: "Raw Shrimp",
         image: food_3,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
-    }, {
+        price: 2000,
+        description: "Fresh raw shrimp, ideal for grilling or boiling.",
+        category: "Shellfish"
+    },
+    {
         _id: "4",
-        name: "Chicken Salad",
+        name: "Raw Scallops",
         image: food_4,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
-    }, {
+        price: 2000,
+        description: "Tender raw scallops, great for searing or baking.",
+        category: "Shellfish"
+    },
+    {
         _id: "5",
-        name: "Lasagna Rolls",
+        name: "Raw Lobster Tail",
         image: food_5,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        price: 2000,
+        description: "Succulent raw lobster tail, perfect for a gourmet meal.",
+        category: "Shellfish"
+    },
+    {
         _id: "6",
-        name: "Peri Peri Rolls",
+        name: "Raw Crab Legs",
         image: food_6,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        price: 2000,
+        description: "Fresh raw crab legs, ideal for steaming or boiling.",
+        category: "Shellfish"
+    },
+    {
         _id: "7",
-        name: "Chicken Rolls",
+        name: "Raw Octopus",
         image: food_7,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        price: 2000,
+        description: "Fresh raw octopus, great for grilling or stewing.",
+        category: "Mollusk"
+    },
+    {
         _id: "8",
-        name: "Veg Rolls",
+        name: "Raw Clams",
         image: food_8,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        price: 2000,
+        description: "Fresh raw clams, perfect for steaming or chowders.",
+        category: "Shellfish"
+    },
+    {
         _id: "9",
-        name: "Ripple Ice Cream",
+        name: "Raw Oysters",
         image: food_9,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
+        price: 2000,
+        description: "Fresh raw oysters, ideal for serving on the half shell.",
+        category: "Shellfish"
+    },
+    {
         _id: "10",
-        name: "Fruit Ice Cream",
+        name: "Raw Mussels",
         image: food_10,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
+        price: 2000,
+        description: "Fresh raw mussels, perfect for steaming or pasta dishes.",
+        category: "Shellfish"
+    },
+    {
         _id: "11",
-        name: "Jar Ice Cream",
+        name: "Raw Squid",
         image: food_11,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
+        price: 2000,
+        description: "Fresh raw squid, great for frying or grilling.",
+        category: "Mollusk"
+    },
+    {
         _id: "12",
-        name: "Vanilla Ice Cream",
+        name: "Raw Sea Urchin",
         image: food_12,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        price: 2000,
+        description: "Fresh raw sea urchin, perfect for sushi or gourmet dishes.",
+        category: "Mollusk"
     },
     {
         _id: "13",
-        name: "Chicken Sandwich",
+        name: "Raw Red Snapper",
         image: food_13,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        price: 2000,
+        description: "Fresh raw red snapper, great for grilling or baking.",
+        category: "Fish"
     },
     {
         _id: "14",
-        name: "Vegan Sandwich",
+        name: "Raw Halibut",
         image: food_14,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
+        price: 2000,
+        description: "Fresh raw halibut, ideal for grilling or roasting.",
+        category: "Fish"
+    },
+    {
         _id: "15",
-        name: "Grilled Sandwich",
+        name: "Raw Mackerel",
         image: food_15,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
+        price: 2000,
+        description: "Fresh raw mackerel, perfect for grilling or smoking.",
+        category: "Fish"
+    },
+    {
         _id: "16",
-        name: "Bread Sandwich",
+        name: "Raw Cod",
         image: food_16,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
+        price: 2000,
+        description: "Fresh raw cod, great for frying or baking.",
+        category: "Fish"
+    },
+    {
         _id: "17",
-        name: "Cup Cake",
+        name: "Raw King Crab",
         image: food_17,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
+        price: 2000,
+        description: "Premium raw king crab, ideal for steaming or boiling.",
+        category: "Shellfish"
+    },
+    {
         _id: "18",
-        name: "Vegan Cake",
+        name: "Raw Swordfish",
         image: food_18,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
+        price: 2000,
+        description: "Fresh raw swordfish, great for grilling or searing.",
+        category: "Fish"
+    },
+    {
         _id: "19",
-        name: "Butterscotch Cake",
+        name: "Raw Sea Bass",
         image: food_19,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
+        price: 2000,
+        description: "Fresh raw sea bass, perfect for grilling or baking.",
+        category: "Fish"
+    },
+    {
         _id: "20",
-        name: "Sliced Cake",
+        name: "Raw Flounder",
         image: food_20,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
-        _id: "21",
-        name: "Garlic Mushroom ",
-        image: food_21,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
-        _id: "22",
-        name: "Fried Cauliflower",
-        image: food_22,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
-        _id: "23",
-        name: "Mix Veg Pulao",
-        image: food_23,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
-        _id: "24",
-        name: "Rice Zucchini",
-        image: food_24,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    },
-    {
-        _id: "25",
-        name: "Cheese Pasta",
-        image: food_25,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    },
-    {
-        _id: "26",
-        name: "Tomato Pasta",
-        image: food_26,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
-        _id: "27",
-        name: "Creamy Pasta",
-        image: food_27,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
-        _id: "28",
-        name: "Chicken Pasta",
-        image: food_28,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
-        _id: "29",
-        name: "Buttter Noodles",
-        image: food_29,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "30",
-        name: "Veg Noodles",
-        image: food_30,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "31",
-        name: "Somen Noodles",
-        image: food_31,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "32",
-        name: "Cooked Noodles",
-        image: food_32,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
+        price: 2000,
+        description: "Fresh raw flounder, great for frying or baking.",
+        category: "Fish"
     }
+    
 ]
