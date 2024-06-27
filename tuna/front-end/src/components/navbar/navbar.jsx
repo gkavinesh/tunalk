@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -8,12 +9,12 @@ const Navbar = () => {
     const [menu,setMenu] = useState("home");
   return (
     <div className='navbar'>
-        <img src={assets.tuna} alt="" style={{ width: '220px', height: '40px' }} className='logo' />
+        <img src={assets.tuna} alt=""className='logo' />
         <ul className="navbar-menu">
-            <li onClick={()=>setMenu("home")}className={menu === "home" ? "active" : ""}>home</li>
-            <li onClick={()=>setMenu("products")}className={menu === "products" ? "active" : ""}>products</li>
-            <li onClick={()=>setMenu("about")}className={menu === "about" ? "active" : ""}>about</li>
-            <li onClick={()=>setMenu("contact")}className={menu === "contact" ? "active" : ""}>contact</li>
+            <Link to='/' onClick={()=>setMenu("home")}className={menu === "home" ? "active" : ""}>home</Link>
+            <a href='#explore-menu' onClick={()=>setMenu("products")}className={menu === "products" ? "active" : ""}>products</a>
+            <a href='#about' onClick={()=>setMenu("about")}className={menu === "about" ? "active" : ""}>about</a>
+            <a href='#footer' onClick={()=>setMenu("contact")}className={menu === "contact" ? "active" : ""}>contact</a>
         </ul>
         <div className="navbar-right">
             <img src={assets.search_icon} alt=''/>

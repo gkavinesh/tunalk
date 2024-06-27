@@ -47,3 +47,29 @@
     border: 1px solid white ;
     color: white;
 }
+
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+
+    }
+
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+
+    .header-contents{
+        max-width: 55%;
+    }
+
+    .header-contents p{
+        display: none;
+    }
+
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
