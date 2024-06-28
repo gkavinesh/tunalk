@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import './Home.css'
 import Header from '../../components/header/header'
-import ExploreProducts from '../../components/ExploreProducts/ExploreProducts'
 import FoodDisplay from '../../fooddisplay/FoodDisplay'
 import AppDownload from '../../components/AppDownload/AppDownload'
-import Phone from '..//../components/phone/Phone'
+import Facts from '..//..//components/facts/facts'
+import About from '..//..//components/about/about'
+import Poll from '..//..//components/poll/poll'
+import Step from '..//..//components/steps/step'
 
 const Home = () => {
   const[category,setCategory] = useState("All");
@@ -12,10 +14,14 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <ExploreProducts category={category} setCategory={setCategory}/>
+      <Facts/>
       <FoodDisplay category={category}/>
-      <Phone/>
+      <About/>
+      <Poll/> 
+      <Step/>
       <AppDownload/>
+      
+
     </div>
   )
 }

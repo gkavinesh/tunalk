@@ -1,13 +1,19 @@
-.navbar{
-    padding: 20px 0px;
+.navbar {
+    padding: 4px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
 }
+
 
 .navbar .logo{
     height: 35px;
-    width: 220px;
+    width: 160px;
+    padding: 5px 5px 5px 5px;
 }
 
 
@@ -15,24 +21,29 @@
     display: flex;
     list-style: none;
     gap: 40px;
-    color: #00A49B;
-    font-size: 22px;
+    color: white;
+    font-size: 16px;
 
 }
 
 .navbar-right{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 
+}
+
+.navbar-right .search{
+    width: 20px;
+    height: 20px;
 }
 
 .navbar-button{
     background:transparent;
     font-size: 16px;
-    color: #00A49B;
-    border: 1px solid #00A49B;
-    padding: 10px 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 20px;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -44,7 +55,7 @@
 
 .navbar .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid #00A49B ;
+    border-bottom: 2px solid white ;
 }
 
 .navbar li{
@@ -53,16 +64,18 @@
 
 .navbar-search-icon{
     position: relative;
+    width: 20px;
+    height: 20px;
 
 }
 
 .navbar-search-icon .dot{
     position: absolute;
-    min-width: 10px;
-    min-height: 10px;
-    background-color: red;
-    border-radius: 5px;
-    top: -8px;
+    min-width: 4px;
+    min-height: 4px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    top: 2px;
     right: -8px;
 }
 

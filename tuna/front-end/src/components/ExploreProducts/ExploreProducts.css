@@ -2,11 +2,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .explore-menu h1 {
     color: #262626;
     font-weight: 500;
+    font-size: 27px;
 }
 
 .explore-menu-text {

@@ -9,7 +9,7 @@
 
 .food-item-image{
     width: 100%;
-    border-radius: 15px 0px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
 
 }
 
@@ -41,7 +41,7 @@
 }
 
 .food-item-price{
-    color: tomato;
+    color: rgb(0, 0, 0);
     font-size: 28px;
     font-weight: 500;
     margin:10px 0px

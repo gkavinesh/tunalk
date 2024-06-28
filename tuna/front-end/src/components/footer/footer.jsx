@@ -15,7 +15,7 @@ const footer = () => {
                 <ul>
                     <li>home</li>
                     <li>products</li>
-                    <li>delivery</li>
+                    <li>delivery areas</li>
                     <li>privacy policy</li>
                 </ul>
             </div>
